@@ -27,7 +27,9 @@ function Login() {
                 {/*힌지*/}
                 <div className={styles.hinge}></div>
                 {/*한영 선택버튼*/}
-                <div className={styles.hanBttn}> 한 </div>
+                <div className={styles.hanBttn}>
+                    <div className={styles.langBttn}> 한 </div>
+                </div>
                 <div className={styles.enBttn}> EN </div>
             </div>
 

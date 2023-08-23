@@ -125,11 +125,7 @@
   box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-
-.hanBttn {
-  position : absolute;
-  top : 45px;
-  left : 91px;
+.langBttn {
   width: 73px;
   height: 63px;
   flex-shrink: 0;
@@ -153,29 +149,14 @@
   align-items: center;
 }
 
+.hanBttn {
+  position : absolute;
+  top : 45px;
+  left : 91px;
+}
+
 .enBttn {
   position : absolute;
   top : 45px;
   left : 180px;
-  width: 73px;
-  height: 63px;
-  flex-shrink: 0;
-  flex-direction: column;
-  //style
-  border-radius: 20px;
-  border: 1px solid #000;
-  background: #D9D9D9;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  //typo
-  color: #1E1B1A;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  //align
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
