@@ -1,0 +1,407 @@
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src : url("../../JetBrainsMono-Regular.ttf");
+}
+
+.monitor {
+  position : absolute;
+  left : 98px;
+  width: 1342px;
+  height: 578px;
+  //style
+  border-radius: 8px;
+  background: #CBCCCB;
+  box-shadow: 10px 4px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.monitorLine1 {
+  position : absolute;
+  left : 10px;
+  top : 13px;
+  width: 1320px;
+  height: 546px;
+  //style
+  border-radius: 15px;
+  border-top: 1px solid #827F81;
+  border-right: 2px solid #827F81;
+  border-bottom: 2px solid #827F81;
+  border-left: 1px solid #827F81;
+  background: #E9E8E6;
+}
+
+.monitorLine2 {
+  position : absolute;
+  top : 15px;
+  left : 15px;
+  width: 1291px;
+  height: 472px;
+  //style
+  border-radius: 30px;
+  border-top: 1px solid #1E1B1A;
+  border-right: 2px solid #1E1B1A;
+  border-bottom: 2px solid #1E1B1A;
+  border-left: 1px solid #1E1B1A;
+  background: rgba(188, 187, 186, 0.58);
+}
+
+.screen {
+  position : absolute;
+  left : 8px;
+  width: 1283px;
+  height: 472px;
+  //style
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: #00145C;
+  box-shadow: 10px 20px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.snslab {
+  position : absolute;
+  top : 483px;
+  left : 547px;
+  width: 236px;
+  height: 50px;
+  //style
+  color: #272423;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.powerBx {
+  position : absolute;
+  top : 505px;
+  left : 1168px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #0011B7;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.power {
+  position : absolute;
+  top : 498px;
+  left : 1202px;
+  width: 81px;
+  height: 31px;
+  flex-shrink: 0;
+  color: #272423;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.upperBar {
+  position : absolute;
+  width: 1283px;
+  height: 36px;
+  //style
+  border-radius: 30px 30px 0 0;
+  background: #FFF;
+}
+
+.upperBarPlus{
+  position : absolute;
+  top : 1px;
+  left : 20px;
+  //layout
+  display: flex;
+  width: 25px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+  //typography
+  color: #192387;
+  text-align: center;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.upperBarTitle {
+  position : absolute;
+  left : 562px;
+  display: flex;
+  width: 156px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+  //typography
+  color: #192387;
+  text-align: center;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.upperBarBttn {
+  position : absolute;
+  top : 7px;
+  left : 1184px;
+  //layout
+  border-radius: 4px;
+}
+
+.NbrTab {
+  position : absolute;
+  top : 39px;
+  //layout
+  width: 41px;
+  height: 433px;
+  flex-shrink: 0;
+  //style
+  border-radius: 0 0 0 30px;
+  background: #00063C;
+}
+
+.NbrTabNbr {
+  //layout
+  width: 9px;
+  height: 20.867px;
+  flex-shrink: 0;
+  //typography
+  color: #FFF;
+  text-align: center;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.NbrTabNbr1{
+  position : absolute;
+  top : 37px;
+  left : 20px;
+}
+
+.NbrTabNbr2{
+  position : absolute;
+  top : 71px;
+  left : 20px;
+}
+
+.NbrTabNbr3{
+  position : absolute;
+  top : 107px;
+  left : 20px;
+}
+
+.screenCode {
+  position : absolute;
+  top : 69px;
+  left : 71px;
+  //layout
+  width: 449px;
+  height: 275px;
+  //typography
+  white-space: pre-wrap;
+  color: #F0F0F0;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inputBgWht{
+  position : absolute;
+  top : 36px;
+  left : 637px;
+  //layout
+  width: 646px;
+  height: 436px;
+  //style
+  border-radius: 0 0 30px 0;
+  background: rgba(193, 193, 193, 0.63);
+}
+
+.inputInnerBg{
+  position : absolute;
+  top : 17px;
+  left : 22px;
+  //layout
+  width: 606px;
+  height: 401px;
+  //style
+  border-radius: 10px;
+  background: #191E50;
+}
+
+.IDConsoleBg{
+  position : absolute;
+  top : 44px;
+  left : 33px;
+  //layout
+  width: 548px;
+  height: 305px;
+  //style
+  border-radius: 0 10px 10px 10px;
+  background: #00063C;
+}
+
+.IDConsoleTabBg{
+  position : absolute;
+  top : 18px;
+  left : 33px;
+  //layout
+  width: 138px;
+  height: 26px;
+  flex-shrink: 0;
+  //style
+  border-radius: 10px 10px 0 0;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.IDConsoleTxt{
+  position : absolute;
+  top : 1px;
+  left : 10px;
+  //layout
+  display: flex;
+  width: 119px;
+  height: 28px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  //typography
+  color: #F0F0F0;
+  text-align: center;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.rightBrk{
+  //layout
+  width: 23px;
+  height: 34.026px;
+  flex-shrink: 0;
+}
+
+.IDRightBrk{
+  position : absolute;
+  top : 71px;
+  left : 26px;
+}
+
+.PWRightBrk{
+  position : absolute;
+  top : 172px;
+  left : 26px;
+}
+
+.IDPWTxt {
+  //layout
+  display: flex;
+  width: 90px;
+  height: 64px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  //typography
+  color: #F0F0F0;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.IDTxt {
+  position : absolute;
+  top : 65px;
+  left : 70px;
+}
+
+.PWTxt {
+  position : absolute;
+  top : 170px;
+  left : 70px;
+}
+
+.inputBox {
+  //layout
+  width: 359px;
+  height: 66px;
+  flex-shrink: 0;
+  //style
+  border-radius: 10px;
+  background: #F0F0F0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.IDBox {
+  position : absolute;
+  top : 58px;
+  left : 164px;
+}
+
+.PWBox {
+  position : absolute;
+  top : 157px;
+  left : 164px;
+}
+
+.inputTxt {
+  position : absolute;
+  top : 5px;
+  left : 25px;
+  //layout
+  width: 359px;
+  height: 64px;
+  flex-shrink: 0;
+  //typography
+  color: #191E50;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.runBg{
+  position : absolute;
+  top : 270px;
+  left : 180px;
+  //layout
+  width: 188px;
+  height: 70px;
+  flex-shrink: 0;
+  //style
+  border-radius: 10px;
+  background: #F0F0F0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.runTxt {
+  position : absolute;
+  top : 4px;
+  left : 23px;
+  //layout
+  width: 142px;
+  height: 53px;
+  flex-shrink: 0;
+  //typography
+  color: #000960;
+  font-family: JetBrains Mono, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}

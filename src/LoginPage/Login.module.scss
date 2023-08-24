@@ -1,0 +1,260 @@
+.background {
+  height : 100vh;
+  //style
+  background-color : #272423; //배경 색
+  background-size : cover;
+}
+
+//---------! dicu-bot ----------//
+.dicubotBg{
+  position : absolute;
+  display: flex;
+  top : 807px;
+  left : 1353px;
+  //layout
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  //style
+  fill: #00145C;
+  stroke-width: 1px;
+  stroke: #000;
+}
+
+.dicubot {
+  //layout
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  //style
+  //background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+}
+
+//---------! keyboard ----------//
+
+.keybdBg {
+  position : absolute;
+  top : 578px;
+  left : 98px;
+  width: 1342px;
+  height: 322px;
+  //style
+  border-radius: 0 0 8px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: #D9D9D9;
+}
+
+.hinge {
+  position : absolute;
+  left : 91px;
+  width: 1164px;
+  height: 24px;
+  //style
+  background: #D9D9D9;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.langBttn {
+  width: 73px;
+  height: 63px;
+  flex-shrink: 0;
+  flex-direction: column;
+  //style
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #D9D9D9;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  //typography
+  color: #1E1B1A;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  //align
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hanBttn {
+  position : absolute;
+  top : 45px;
+  left : 91px;
+}
+
+.enBttn {
+  position : absolute;
+  top : 45px;
+  left : 180px;
+}
+
+.keybdTab {
+  position : absolute;
+  top : 57px;
+  left : 294px;
+  //layout
+  width: 912px;
+  height: 42px;
+  //style
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  background: #00145C;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.tabIconLight {
+  position : absolute;
+  top : 6px;
+  left : 16px;
+  //layout
+  width: 30.707px;
+  height: 30.707px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.tabIconDefault {
+  position : absolute;
+  top : 16px;
+  left : 438px;
+  //layout
+  width: 31px;
+  height: 8.455px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.tabIconSound {
+  position : absolute;
+  top : 7px;
+  left : 871px;
+  //layout
+  width: 25.007px;
+  height: 27.786px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.keybdLight {
+  position : absolute;
+  top : 45px;
+  left : 1257px;
+  //layout
+  width: 52px;
+  height: 54px;
+}
+
+.backBttn {
+  position : absolute;
+  top : 120px;
+  left : 82px;
+  //layout
+  width: 321px;
+  height: 162.375px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.backBttnTxt{
+
+}
+
+.backBttnArr{
+  position : absolute;
+  top : 104px;
+  left : 24px;
+  //layout
+  width: 51.45px;
+  height: 41.117px;
+  flex-shrink: 0;
+}
+
+.signupBttn {
+  position : absolute;
+  top : 120px;
+  left : 632px;
+  //layout
+  width: 361px;
+  height: 162.375px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.signupBttnArr{
+  position : absolute;
+  top : 107px;
+  left : 22px;
+  //layout
+  width: 50px;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+.keybdBttnSmall {
+  //layout
+  width: 202px;
+  height: 79.314px;
+  flex-shrink: 0;
+  //style
+  border-radius: 20px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.findID {
+  position : absolute;
+  top : 120px;
+  left : 417px;
+}
+
+.findIDArr{
+  position : absolute;
+  top : 46px;
+  left : 22px;
+  //layout
+  width: 22px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.findPW {
+  position : absolute;
+  top : 204px;
+  left : 417px;
+}
+
+.findPWArr{
+  position : absolute;
+  top : 44px;
+  left : 22px;
+  //layout
+  width: 20px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.enter {
+  position : absolute;
+  top : 120px;
+  left : 1014px;
+  //layout
+  width: 263px;
+  height: 163px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
