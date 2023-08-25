@@ -1,8 +1,319 @@
-.keyboardBackground {
-  width: 1342px;
-  height: 322px;
+
+//--------width ---------//
+$hinge-width : 90%;
+$keybdTab-width : 70%;
+$langBttn-width : 73px;
+$backBttn-wdith : 26%;
+$keybdBttnSmall-width : 20%;
+$signupBttn-width : calc(#{$backBttn-wdith} + 2%);
+$BttnTxtsmall-width : 154px;
+//--------left-----------//
+$background-left-gap : 98px;
+$enBttn-left : 180px;
+$hanBttn-left : 91px;
+$keybdTab-left : 330px;
+$keybdLight-left : calc(#{$keybdTab-left} + #{$keybdTab-width} + 4%);
+$backBttn-left : 82px;
+$keybdBttnSmall-left : calc(#{$backBttn-left} + #{$backBttn-wdith} + 1%);
+$signupBttn-left : calc(#{$keybdBttnSmall-left} + #{$keybdBttnSmall-width} + 1%);
+$enter-left : calc(#{$signupBttn-left} + #{$signupBttn-width} + 1%);
+
+
+.background{
+  position : relative;
+  left : $background-left-gap;
+  width : calc(100vw - #{$background-left-gap});
+  height: 30vh //monitor.module.css 에서 2px 먹고있음
+}
+
+.keybdBg {
+  position : relative;
+  height: 100%;
+  min-width: 1342px;
+  min-height: 300px;
   //style
   border-radius: 0 0 8px 8px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   background: #D9D9D9;
+}
+
+.hinge {
+  position : absolute;
+  left : calc(50% - (#{$hinge-width}/2));
+  width: $hinge-width;
+  height: 24px;
+  //style
+  background: #D9D9D9;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.langBttn {
+  width: $langBttn-width;
+  height: 63px;
+  flex-shrink: 0;
+  flex-direction: column;
+  //style
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #D9D9D9;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  //typography
+  color: #1E1B1A;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  //align
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hanBttn {
+  position : absolute;
+  top : 45px;
+  left : $hanBttn-left;
+}
+
+.enBttn {
+  position : absolute;
+  top : 45px;
+  left : $enBttn-left;
+}
+
+.keybdTab {
+  position : absolute;
+  top : 57px;
+  left : $keybdTab-left;
+  //layout
+  width: $keybdTab-width;
+  height: 42px;
+  //style
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  background: #00145C;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.tabIconLight {
+  position : absolute;
+  top : 6px;
+  left : 16px;
+  //layout
+  width: 30.707px;
+  height: 30.707px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.tabIconDefault {
+  position : absolute;
+  top : 16px;
+  left : 50%;
+  //layout
+  width: 31px;
+  height: 8.455px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.tabIconSound {
+  position : absolute;
+  top : 7px;
+  right : 16px;
+  //layout
+  width: 25.007px;
+  height: 27.786px;
+  flex-shrink: 0;
+  //style
+  fill: #FFE299;
+}
+
+.keybdLight {
+  position : absolute;
+  top : 45px;
+  left : $keybdLight-left;
+  overflow : hidden;
+  //layout
+  width: 52px;
+  height: 54px;
+}
+
+.BttnTxtBig{
+  //typography
+  color: #272423;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.backBttn {
+  position : absolute;
+  top : 120px;
+  left : $backBttn-left;
+  //layout
+  width: $backBttn-wdith;
+  height: 162.375px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.backTxt{
+  position : absolute;
+  top : 8px;
+  left : 22px;
+  //layout
+  width: 284px;
+  height: 79.314px;
+  flex-shrink: 0;
+}
+
+.backBttnArr{
+  position : absolute;
+  top : 104px;
+  left : 24px;
+  //layout
+  width: 51.45px;
+  height: 41.117px;
+  flex-shrink: 0;
+}
+
+.signupBttn {
+  position : absolute;
+  top : 120px;
+  left : $signupBttn-left;
+  //layout
+  width: $signupBttn-width;
+  height: 162.375px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.signupTxt{
+  position : absolute;
+  top : 8px;
+  left : 22px;
+  //layout
+  width: 277px;
+  height: 64.326px;
+  flex-shrink: 0;
+}
+
+.signupBttnArr{
+  position : absolute;
+  top : 107px;
+  left : 22px;
+  //layout
+  width: 50px;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+.keybdBttnSmall {
+  left : $keybdBttnSmall-left;
+  //layout
+  width: $keybdBttnSmall-width;
+  height: 79.314px;
+  flex-shrink: 0;
+  //style
+  border-radius: 20px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.BttnTxtsmall{
+  position : absolute;
+  top : 1px;
+  left : 22px;
+  //layout
+  width: $BttnTxtsmall-width;
+  height: 36px;
+  flex-shrink: 0;
+  //typography
+  color: #272423;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.findID {
+  position : absolute;
+  top : 120px;
+}
+
+.findIDArr{
+  position : absolute;
+  top : 46px;
+  left : 22px;
+  //layout
+  width: 22px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.findPW {
+  position : absolute;
+  top : 204px;
+}
+
+.findPWArr{
+  position : absolute;
+  top : 44px;
+  left : 22px;
+  //layout
+  width: 20px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.enter {
+  position : absolute;
+  top : 120px;
+  left : $enter-left;
+  //layout
+  width: 263px;
+  height: 163px;
+  flex-shrink: 0;
+  //style
+  border-radius: 30px;
+  background: #F0F0F0;
+  box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.25);
+  //typography
+  color: #272423;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.enterTxt{
+  position : absolute;
+  top : 50px;
+  left : 50px;
+}
+
+.enterArr{
+  position : absolute;
+  top : 71px;
+  left : 188px;
+  //layout
+  width: 52px;
+  height: 68.406px;
+  flex-shrink: 0;
 }

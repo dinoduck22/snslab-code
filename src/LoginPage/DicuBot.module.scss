@@ -1,0 +1,24 @@
+//---------! dicu-bot ----------//
+.dicubotBg{
+  position : fixed;
+  display: flex;
+  bottom : 20px;
+  right : 20px;
+  //layout
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  //style
+  fill: #00145C;
+  stroke-width: 1px;
+  stroke: #000;
+}
+
+.dicubot {
+  //layout
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  //style
+  //background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+}

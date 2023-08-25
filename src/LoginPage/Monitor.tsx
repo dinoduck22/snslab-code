@@ -13,7 +13,7 @@ function monitor() {
     let IDConsoleTabTxt = ">_Console"
     let runTxt = "> Run"
     return(
-        <div>
+        <div className={styles.background}>
             {/*모니터*/}
             <div className={styles.monitor}>
                 <div className={styles.monitorLine1}>
@@ -67,15 +67,11 @@ function monitor() {
                                             <div className={styles.PWTxt}> PW : </div>
                                         </div>
                                         {/*인풋 박스*/}
-                                        <div className={styles.IDBox}>
-                                            <div className={styles.inputBox}>
-                                                <div className={styles.inputTxt}> _ </div>
-                                            </div>
+                                        <div className={[styles.IDBox, styles.inputBox].join(" ")}>
+                                            <div className={[styles.inputTxt, styles.blink].join(" ")}> _ </div>
                                         </div>
-                                        <div className={styles.PWBox}>
-                                            <div className={styles.inputBox}>
-                                                <div className={styles.inputTxt}> _ </div>
-                                            </div>
+                                        <div className={[styles.PWBox, styles.inputBox].join(" ")}>
+                                            <div className={[styles.inputTxt, styles.blink].join(" ")}> _ </div>
                                         </div>
                                         {/*실행버튼 Run*/}
                                         <div className={styles.runBg}>

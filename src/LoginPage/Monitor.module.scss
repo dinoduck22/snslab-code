@@ -4,11 +4,70 @@
   src : url("../../JetBrainsMono-Regular.ttf");
 }
 
+@keyframes blink-effect {
+  50% {
+    opacity : 0;
+  }
+}
+
+.blink {
+  animation : blink-effect 1.6s step-end infinite;
+}
+
+//--------left gap---------//
+$background-left-gap : 98px;
+$monitorLine1-left-gap : 10px;
+$monitorLine2-left-gap : 15px;
+$screen-left-gap : 8px;
+$inputInnerBg-left-gap : 22px;
+$IDConsoleBg-left-gap : 33px;
+$rightBrk-left-gap : 15%;
+$IDPWTxt-left-gap : 25%;
+//--------top----------//
+$monitorLine1-top : 13px;
+$monitorLine2-top : 15px;
+$NbrTab-top : 37px;
+$inputInnerBg-top : 17px;
+$inIDConsoleBg-top : 44px;
+//--------width--------//
+$upperBarTitle-width : 156px;
+$snslab-width : 236px;
+$IDConsoleBg-max-width : calc(100% - (#{$IDConsoleBg-left-gap}*1.8));
+//-------height--------//
+$background-height-min : 580px;
+$background-height : 69vh;
+$snslab-height : 50px;
+$monitorLine1-height : calc(#{$background-height} - (#{$monitorLine1-top}*2));
+$monitorLine2-height : calc(#{$monitorLine1-height} - (#{$snslab-height}*1.8));
+$screen-height : $monitorLine2-height;
+$NbrTab-height : calc(#{$screen-height} - #{$NbrTab-top});
+$inputBgWht : $NbrTab-height;
+$inputInnerBg-height : calc(#{$inputBgWht} - (#{$inputInnerBg-top}*2));
+$inIDConsoleBg-height : calc(#{$inputInnerBg-height} - (#{$inIDConsoleBg-top}*2));
+$runBg-height : 70px;
+$inputBox-height : 66px;
+//-------bottom-------//
+$screen-design-bottom : 20px;
+$runBg-bottom : calc(#{$runBg-height}/3 * -1);
+//------------//
+$IDBox-top : calc(#{$inIDConsoleBg-height}/4);
+$PWBox-top : calc(#{$IDBox-top} + (#{$inputBox-height} * 1.8));
+$IDTxt-top : calc(#{$IDBox-top} + 3%);
+$PwTxt-top : calc(#{$PWBox-top} + 3%);
+
+.background{
+  position : relative;
+  left : $background-left-gap;
+  max-width : calc(100vw - #{$background-left-gap});
+  height: $background-height;
+  min-height : $background-height-min;
+}
+
 .monitor {
-  position : absolute;
-  left : 98px;
-  width: 1342px;
-  height: 578px;
+  position : relative;
+  height : 100%;
+  min-width: 1342px;
+  min-height: $background-height-min;
   //style
   border-radius: 8px;
   background: #CBCCCB;
@@ -16,11 +75,13 @@
 }
 
 .monitorLine1 {
-  position : absolute;
-  left : 10px;
-  top : 13px;
-  width: 1320px;
-  height: 546px;
+  position : relative;
+  left : $monitorLine1-left-gap;
+  top : $monitorLine1-top;
+  height : $monitorLine1-height;
+  max-width : calc(100% - #{$monitorLine1-left-gap} * 2);
+  min-width: 1320px;
+  min-height: 546px;
   //style
   border-radius: 15px;
   border-top: 1px solid #827F81;
@@ -31,11 +92,13 @@
 }
 
 .monitorLine2 {
-  position : absolute;
+  position : relative;
   top : 15px;
-  left : 15px;
-  width: 1291px;
-  height: 472px;
+  left : $monitorLine2-left-gap;
+  height : $monitorLine2-height;
+  max-width : calc(100% - #{$monitorLine2-left-gap} * 2);
+  min-width: 1291px;
+  min-height: 472px;
   //style
   border-radius: 30px;
   border-top: 1px solid #1E1B1A;
@@ -46,10 +109,12 @@
 }
 
 .screen {
-  position : absolute;
-  left : 8px;
-  width: 1283px;
-  height: 472px;
+  position : relative;
+  left : $screen-left-gap;
+  height : $monitorLine2-height;
+  max-width : calc(100% - #{$screen-left-gap} * 2);
+  min-width: 1283px;
+  min-height: 472px;
   //style
   border-radius: 30px;
   border: 1px solid #000;
@@ -59,10 +124,10 @@
 
 .snslab {
   position : absolute;
-  top : 483px;
-  left : 547px;
+  bottom : $screen-design-bottom;
+  left : calc(50% - (#{$snslab-width}/2));
   width: 236px;
-  height: 50px;
+  height: $snslab-height;
   //style
   color: #272423;
   text-align: center;
@@ -75,8 +140,8 @@
 
 .powerBx {
   position : absolute;
-  top : 505px;
-  left : 1168px;
+  bottom : calc(#{$screen-design-bottom} - 5px);
+  right : 130px;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -87,8 +152,8 @@
 
 .power {
   position : absolute;
-  top : 498px;
-  left : 1202px;
+  bottom : $screen-design-bottom;
+  right : 40px;
   width: 81px;
   height: 31px;
   flex-shrink: 0;
@@ -101,9 +166,9 @@
 }
 
 .upperBar {
-  position : absolute;
-  width: 1283px;
-  height: 36px;
+  position : relative;
+  min-width: 1283px;
+  min-height: 36px;
   //style
   border-radius: 30px 30px 0 0;
   background: #FFF;
@@ -131,7 +196,7 @@
 
 .upperBarTitle {
   position : absolute;
-  left : 562px;
+  left : calc(50% - (#{$upperBarTitle-width}/2));
   display: flex;
   width: 156px;
   height: 36px;
@@ -150,7 +215,7 @@
 .upperBarBttn {
   position : absolute;
   top : 7px;
-  left : 1184px;
+  right : 20px;
   //layout
   border-radius: 4px;
 }
@@ -160,7 +225,8 @@
   top : 39px;
   //layout
   width: 41px;
-  height: 433px;
+  height : $NbrTab-height;
+  min-height: 433px;
   flex-shrink: 0;
   //style
   border-radius: 0 0 0 30px;
@@ -218,36 +284,42 @@
 }
 
 .inputBgWht{
-  position : absolute;
-  top : 36px;
-  left : 637px;
+  position : relative;
+  left : 50%;
+  height : $NbrTab-height;
+  overflow : hidden;
   //layout
-  width: 646px;
-  height: 436px;
+  max-width : 50%;
+  min-width: 646px;
+  min-height: 436px;
   //style
   border-radius: 0 0 30px 0;
   background: rgba(193, 193, 193, 0.63);
 }
 
 .inputInnerBg{
-  position : absolute;
-  top : 17px;
-  left : 22px;
+  position : relative;
+  top : $inputInnerBg-top;
+  left : $inputInnerBg-left-gap;
+  height : $inputInnerBg-height;
   //layout
-  width: 606px;
-  height: 401px;
+  max-width : calc(100% - (#{$inputInnerBg-left-gap}*1.8));
+  min-width: 606px;
+  min-height: 401px;
   //style
   border-radius: 10px;
   background: #191E50;
 }
 
 .IDConsoleBg{
-  position : absolute;
-  top : 44px;
-  left : 33px;
+  position : relative;
+  top : $inIDConsoleBg-top;
+  left : $IDConsoleBg-left-gap;
+  height: $inIDConsoleBg-height;
   //layout
-  width: 548px;
-  height: 305px;
+  max-width : $IDConsoleBg-max-width;
+  min-width: 548px;
+  min-height: 305px;
   //style
   border-radius: 0 10px 10px 10px;
   background: #00063C;
@@ -296,14 +368,14 @@
 
 .IDRightBrk{
   position : absolute;
-  top : 71px;
-  left : 26px;
+  top : $IDTxt-top;
+  left :$rightBrk-left-gap;
 }
 
 .PWRightBrk{
   position : absolute;
-  top : 172px;
-  left : 26px;
+  top : $PwTxt-top;
+  left : $rightBrk-left-gap;
 }
 
 .IDPWTxt {
@@ -325,20 +397,22 @@
 
 .IDTxt {
   position : absolute;
-  top : 65px;
-  left : 70px;
+  top : $IDTxt-top;
+  left : $IDPWTxt-left-gap;
 }
 
 .PWTxt {
   position : absolute;
-  top : 170px;
-  left : 70px;
+  top : $PwTxt-top;
+  left : $IDPWTxt-left-gap;
 }
 
 .inputBox {
+  position : absolute;
+  left : 40%;
   //layout
-  width: 359px;
-  height: 66px;
+  min-width: calc(#{$IDConsoleBg-max-width} / 2);
+  min-height: $inputBox-height;
   flex-shrink: 0;
   //style
   border-radius: 10px;
@@ -347,15 +421,11 @@
 }
 
 .IDBox {
-  position : absolute;
-  top : 58px;
-  left : 164px;
+  top : $IDBox-top;
 }
 
 .PWBox {
-  position : absolute;
-  top : 157px;
-  left : 164px;
+  top : $PWBox-top;
 }
 
 .inputTxt {
@@ -377,8 +447,8 @@
 
 .runBg{
   position : absolute;
-  top : 270px;
-  left : 180px;
+  bottom : $runBg-bottom;
+  left : 40%;
   //layout
   width: 188px;
   height: 70px;
