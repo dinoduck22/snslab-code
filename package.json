@@ -19,6 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "ipv4": "HOST=203.250.33.87 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
