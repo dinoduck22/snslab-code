@@ -6,7 +6,7 @@ function dicuBot() {
         <div>
             {/*디쿠봇*/}
             <div className={styles.dicubotBg}>
-                <img alt="dicu" src={require('../svg/dicu-botBackground.svg').default} />
+                <img alt="dicu" src={require('../svg/dicu-bot.svg').default} />
             </div>
         </div>
     );

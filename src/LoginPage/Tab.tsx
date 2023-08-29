@@ -7,7 +7,9 @@ function Tab() {
             {/* 탭 */}
             <div className={styles.tab}>
                 {/* 로고 */}
-                <div className={styles.logo}></div>
+                <div className={styles.logo}>
+                    <img alt="proflie" src={require("../svg/dcuLogo.svg").default} />
+                </div>
 
                 {/* 프로필 */}
                 <div className={styles.profileBg}>
