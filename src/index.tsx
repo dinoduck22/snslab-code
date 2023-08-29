@@ -3,14 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Login from './LoginPage/Login';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+import PageMove from "./LoginPage/PageMove";
+import SignUp from "./SignUpPage/SignUp";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>
+  <BrowserRouter>
+      <PageMove></PageMove>
+      {/*<Login></Login>*/}
+      <SignUp></SignUp>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -35,7 +35,7 @@ $snslab-width : 236px;
 $IDConsoleBg-max-width : calc(100% - (#{$IDConsoleBg-left-gap}*1.8));
 //-------height--------//
 $background-height-min : 580px;
-$background-height : 69vh;
+$background-height : 68vh;
 $snslab-height : 50px;
 $monitorLine1-height : calc(#{$background-height} - (#{$monitorLine1-top}*2));
 $monitorLine2-height : calc(#{$monitorLine1-height} - (#{$snslab-height}*1.8));
@@ -222,7 +222,6 @@ $PwTxt-top : calc(#{$PWBox-top} + 3%);
 
 .NbrTab {
   position : absolute;
-  top : 39px;
   //layout
   width: 41px;
   height : $NbrTab-height;

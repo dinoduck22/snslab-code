@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './Keyboard.module.scss';
+import {useNavigate} from "react-router-dom";
 
-function keyboard() {
+function Keyboard() {
+    const navigate = useNavigate();
+    function goSignUP() {
+        navigate('../SignUpPage/SignUp');
+    }
+
     return(
         <div className={styles.background}>
             {/*키보드*/}
@@ -39,7 +45,7 @@ function keyboard() {
                     </div>
                 </div>
                 <div className={styles.signupBttn}>
-                    <div className={[styles.BttnTxtBig, styles.signupTxt].join(" ")}> 회원가입 </div>
+                    <div onClick={goSignUP} className={[styles.BttnTxtBig, styles.signupTxt].join(" ")}> 회원가입 </div>
                     <div className={styles.signupBttnArr}>
                         <img alt="signUp" src={require('../svg/rightArrw.svg').default}/>
                     </div>
@@ -67,4 +73,4 @@ function keyboard() {
     );
 }
 
-export default keyboard;
+export default Keyboard;

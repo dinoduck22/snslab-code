@@ -23,7 +23,7 @@ $enter-left : calc(#{$signupBttn-left} + #{$signupBttn-width} + 1%);
   position : relative;
   left : $background-left-gap;
   width : calc(100vw - #{$background-left-gap});
-  height: 30vh //monitor.module.css 에서 2px 먹고있음
+  height: calc(32vh - 2px); //monitor.module.css 에서 2px 먹고있음
 }
 
 .keybdBg {
