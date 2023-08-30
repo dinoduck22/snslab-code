@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Login from './LoginPage/Login';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
-import PageMove from "./LoginPage/PageMove";
-import SignUp from "./SignUpPage/SignUp";
+import PageMove from "./PageMove";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,8 +11,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
       <PageMove></PageMove>
-      {/*<Login></Login>*/}
-      <SignUp></SignUp>
   </BrowserRouter>
 );
 

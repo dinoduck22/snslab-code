@@ -45,6 +45,51 @@ function SignUp() {
                             </div>
                             {/*Screen 불투명 흰색*/}
                             <div className={styles.inputBgWht}>
+                                {/*연동 로그인 문구*/}
+                                <div className={styles.linkLoginTxt}> 하나의 아이디로 서비스 이용하기 </div>
+                                {/*화살표*/}
+                                <div className={[styles.linkLoginArr, styles.linkLoginArrLeft].join(" ")}>
+                                    <img alt = "arrowL" src={require('../svg/doubleArrwL.svg').default}/>
+                                </div>
+                                <div className={[styles.linkLoginArr, styles.linkLoginArrRight].join(" ")}>
+                                    <img alt = "arrowR" src={require('../svg/doubleArrwR.svg').default}/>
+                                </div>
+                                {/*브랜드 아이콘*/}
+                                <div className={styles.icon}>
+                                    <div className={styles.googleIcon}>
+                                        <img alt = "GoogleLogin" src={require('../svg/googleIcon.svg').default}/>
+                                    </div>
+                                    <div className={styles.githubIcon}>
+                                        <img alt = "GithubLogin" src={require('../svg/githubIcon.svg').default}/>
+                                    </div>
+                                    <div className={styles.dcuIcon}>
+                                        <img alt = "DcuLogin" src={require('../svg/dcuIcon.svg').default}/>
+                                    </div>
+                                </div>
+                                {/*정보 입력란*/}
+                                <div className={styles.inputGroup}>
+                                    <div className={styles.inputBoxShadow}></div>
+                                    <div className={styles.signUpBttn}> 회원가입 </div>
+                                </div>
+                                <div className={styles.input}>
+                                    <div className={styles.inputBox}>
+                                        <div className={styles.inputBoxTxt}> 이메일 </div>
+                                    </div>
+                                    <div className={styles.inputBox}>
+                                        <div className={styles.inputBoxTxt}> 비밀번호 (영문, 숫자, 특수문자 8-30자) </div>
+                                    </div>
+                                    <div className={styles.inputBox}>
+                                        <div className={styles.inputBoxTxt}> 비밀번호 확인 </div>
+                                    </div>
+                                    <div className={styles.inputBox}>
+                                        <div className={styles.inputBoxTxt}> 이름 (2-15자) </div>
+                                    </div>
+                                </div>
+                                {/*기존 아이디 존재유무 확인*/}
+                                <div className={styles.checkLogin}>
+                                    <div className={styles.checkLoginPlainTxt}> 이미 계정이 있으세요? </div>
+                                    <div className={styles.checkLoginBttnTxt}> 로그인 </div>
+                                </div>
                                 {/*약관 동의*/}
                                 <div className={styles.agreementBg}>
                                     <div className={styles.agreementTxt}> {agreement} </div>
