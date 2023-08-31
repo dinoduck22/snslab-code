@@ -1,9 +1,11 @@
 .fontThree {
+  position: relative;
   display: flex;
-  width: 77px;
-  height: 26px;
+  width: 80px;
+  height: fit-content;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   //typography
   color: #1E1B1A;
@@ -16,27 +18,7 @@
 }
 
 .fontFour {
-  position : absolute;
-  left : -3px;
-  display: flex;
-  width: 80px;
-  height: 26px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  //typography
-  color: #1E1B1A;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.fontDarkmode {
-  position : absolute;
-  left : -14px;
+  position : relative;
   display: flex;
   width: 80px;
   height: 26px;
@@ -55,8 +37,12 @@
 
 .tab {
   position : absolute;
-  width: 98px;
+  width: 10%;
   height: calc(100vh - 2px);
+  display: inline-block;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
   //style
   border-radius: 20px;
   border: 1px solid #787776;
@@ -64,9 +50,9 @@
 }
 
 .logo {
-  position : absolute;
-  top : 27px;
-  left : 14px;
+  position : relative;
+  margin-top : 20px;
+  margin-left : 20px;
   width: 70px;
   height: 70px;
   //logo 중앙정렬
@@ -79,66 +65,27 @@
   //background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
 }
 
-.profileBg {
-  position : absolute;
-  top : 130px;
-  left : 13px;
-  width: 75px;
-  height: 75px;
-  flex-shrink: 0;
+.iconGroup{
+  position: relative;
+  margin-top : 10px;
+  margin-left : 10px;
+  width : 40%;
+  height : 80%;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.lecture {
-  position : absolute;
-  top : 260px;
-  left : 14px;
+.icon {
+  position : relative;
+  margin-top : 10px;
+  margin-left : 5px;
   width: 70px;
   height: 60px;
-  flex-shrink: 0;
-}
-
-.problem {
-  position : absolute;
-  top : 360px;
-  left : 14px;
-  width: 70px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.skillcheck {
-  position : absolute;
-  top : 460px;
-  left : 14px;
-  width: 70px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.contest {
-  position : absolute;
-  top : 565px;
-  left : 14px;
-  width: 70px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.community{
-  position : absolute;
-  top : 670px;
-  left : 14px;
-  width: 70px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.darkmode{
-  position : absolute;
-  top : 800px;
-  left : 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-content: center;
-  width: 49px;
-  height: 49px;
   flex-shrink: 0;
 }
