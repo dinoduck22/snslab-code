@@ -43,19 +43,16 @@ function SignUp() {
                                     <div className={styles.NbrTabNbr3}> 3 </div>
                                 </div>
                             </div>
-                            {/*Screen 불투명 흰색*/}
+                            {/*Screen 불투명 흰색 바탕*/}
                             <div className={styles.inputBgWht}>
                                 {/*연동 로그인 문구*/}
                                 <div className={styles.linkLoginTxt}> 하나의 아이디로 서비스 이용하기 </div>
-                                {/*화살표*/}
-                                <div className={[styles.linkLoginArr, styles.linkLoginArrLeft].join(" ")}>
-                                    <img alt = "arrowL" src={require('../svg/doubleArrwL.svg').default}/>
-                                </div>
-                                <div className={[styles.linkLoginArr, styles.linkLoginArrRight].join(" ")}>
-                                    <img alt = "arrowR" src={require('../svg/doubleArrwR.svg').default}/>
-                                </div>
                                 {/*브랜드 아이콘*/}
                                 <div className={styles.icon}>
+                                    {/*화살표 L*/}
+                                    <div className={[styles.linkLoginArr, styles.linkLoginArrLeft].join(" ")}>
+                                        <img alt = "arrowL" src={require('../svg/doubleArrwL.svg').default}/>
+                                    </div>
                                     <div className={styles.googleIcon}>
                                         <img alt = "GoogleLogin" src={require('../svg/googleIcon.svg').default}/>
                                     </div>
@@ -65,12 +62,17 @@ function SignUp() {
                                     <div className={styles.dcuIcon}>
                                         <img alt = "DcuLogin" src={require('../svg/dcuIcon.svg').default}/>
                                     </div>
+                                    {/*화살표 R*/}
+                                    <div className={[styles.linkLoginArr, styles.linkLoginArrRight].join(" ")}>
+                                        <img alt = "arrowR" src={require('../svg/doubleArrwR.svg').default}/>
+                                    </div>
                                 </div>
-                                {/*정보 입력란*/}
                                 <div className={styles.inputGroup}>
                                     <div className={styles.inputBoxShadow}></div>
+                                    {/*회원가입 버튼*/}
                                     <div className={styles.signUpBttn}> 회원가입 </div>
                                 </div>
+                                {/*정보 입력란*/}
                                 <div className={styles.input}>
                                     <div className={styles.inputBox}>
                                         <div className={styles.inputBoxTxt}> 이메일 </div>
